@@ -20,7 +20,19 @@
                 font-family: 'Fraunces',serif;
                 font-size: 1rem;
                 font-weight: 500;
+                border: white 2px solid;
+                &:hover {
+                    background-color: transparent;
+                    cursor: pointer;
+                    color: white;
+                    transition: .2s;
+                }
             }
+        }
+        .menu li:hover {
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s;
         }
         img {
             width: 13rem;
@@ -63,5 +75,32 @@
      .menu li {
          display: none;
         }  
+    }
+}
+.header .header-nav .menu-hamburger {
+    gap: 0rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: white;
+        color: cornflowerblue;
+        height: 50px;
+    }
+}
+.menu-burger, .menu-hamburger {
+    display: none;
+    }
+@media (max-width:375px) {
+    .menu-burger {
+        display: none;
+        display: block;
     }
 }

@@ -25,5 +25,9 @@
         display: flex;
         align-items: center;
         gap: 1.5rem;
+        li:hover, li img:hover {
+            font-weight: 600;
+            cursor: pointer;
+        }
     }
 }

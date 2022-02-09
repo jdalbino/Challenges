@@ -99,6 +99,20 @@ table {
   font-family: "Fraunces", serif;
   font-size: 1rem;
   font-weight: 500;
+  border: white 2px solid;
+}
+.header .header-nav ul button:hover {
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.header .header-nav .menu li:hover {
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 .header .header-nav img {
   width: 13rem;
@@ -148,6 +162,53 @@ table {
   }
   .header-nav .menu li {
     display: none;
+  }
+}
+.header .header-nav .menu-hamburger {
+  gap: 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .header-nav .menu-hamburger li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: white;
+  color: cornflowerblue;
+  height: 50px;
+}
+
+.menu-burger, .menu-hamburger {
+  display: none;
+}
+
+@media (max-width: 375px) {
+  .menu-burger {
+    display: none;
+    display: block;
   }
 }
 .main-features {
@@ -220,6 +281,12 @@ table {
   color: black;
   -webkit-text-decoration: solid underline yellow 5px;
           text-decoration: solid underline yellow 5px;
+  cursor: pointer;
+}
+.main-features div:nth-child(1) .learn:hover, .main-features div:nth-child(4) .learn:hover {
+  font-weight: 700;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 .main-features div:nth-child(4) .learn {
   -webkit-text-decoration: solid underline #fe7867 5px;
@@ -303,8 +370,11 @@ table {
     padding-left: 20%;
     padding-right: 20%;
   }
+  .main-features div:nth-child(1) h2, .main-features div:nth-child(4) h2 {
+    width: 100%;
+  }
 }
-@media (max-width: 380px) {
+@media (max-width: 430px) {
   .main-features div:nth-child(1), .main-features div:nth-child(4) {
     gap: 0.5rem;
   }
@@ -313,6 +383,24 @@ table {
   }
   .main-features div:nth-child(5) h3, .main-features div:nth-child(6) h3 {
     margin-bottom: 0.4rem;
+  }
+}
+@media (max-width: 320px) {
+  .main-features img {
+    height: 100%;
+  }
+  .main-features div:nth-child(1), .main-features div:nth-child(4) {
+    padding: 1rem;
+  }
+  .main-features div:nth-child(1) h2, .main-features div:nth-child(4) h2 {
+    font-size: 1.3rem;
+    line-height: 1rem;
+  }
+  .main-features div:nth-child(5), .main-features div:nth-child(6) {
+    padding-bottom: 1rem;
+  }
+  .main-features div:nth-child(5) h3, .main-features div:nth-child(6) h3 {
+    margin-bottom: 0.2rem;
   }
 }
 .main-testimonials {
@@ -397,6 +485,42 @@ table {
   height: auto;
 }
 
+@media (max-width: 465px) {
+  .main-portfolio {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[2];
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+  }
+  .main-portfolio > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .main-portfolio > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  .main-portfolio > *:nth-child(3) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  .main-portfolio > *:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+  .main-portfolio img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 320px) {
+  .main-portfolio {
+    display: block;
+  }
+}
 .footer {
   background-color: #7ed7c6;
   padding: 4rem;
@@ -437,4 +561,8 @@ table {
       -ms-flex-align: center;
           align-items: center;
   gap: 1.5rem;
+}
+.footer ul li:hover, .footer ul li img:hover {
+  font-weight: 600;
+  cursor: pointer;
 }
