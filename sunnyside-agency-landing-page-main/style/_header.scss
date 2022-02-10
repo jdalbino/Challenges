@@ -61,6 +61,7 @@
      }
 }
 
+//Hamburger menu
 .contenedor-burger,
 .logo-burger,
 .menu-hamburger,
@@ -93,7 +94,7 @@
 }
 .header .header-nav .menu-hamburger {
     gap: 0rem;
-    display: block;
+    display: none;
     position: absolute;
     margin-top: 1rem;
     right: 44px;
@@ -120,6 +121,7 @@
             height: auto;
         }
         .menu-hamburger {
+            display: none;
             right: 14px;
         }
     }
