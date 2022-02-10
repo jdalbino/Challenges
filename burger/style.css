@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: blanchedalmond;
+}
+.menu {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+}
+.logo-hamburguesa,
+.menu-hamburguesa,
+.menu-hamburguesa li {
+    display: none;
+}
+
+
+@media (max-width:400px) {
+    .menu {
+        display: none;
+    }
+    .logo-hamburguesa {
+        display: block;
+        width: 50px;
+        height: 20px;
+    }
+    .menu-hamburguesa {
+        display: block;
+        position: absolute;
+        margin-top: 1rem;
+        right: 0;
+    }
+    .menu-hamburguesa li {
+        display: block;
+    }
+}
+

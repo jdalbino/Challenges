@@ -1,9 +1,9 @@
- const menu = document.querySelector('.menu-burger');
+ const menuLogo = document.querySelector('.logo-burger');
 
- //menu.addEventListener('click',myFunction());
+ menuLogo.addEventListener('click',HideMenu);
 
- function myFunction() {
-    var x = document.querySelector(".menu-hamburger");
+ function HideMenu() {
+    const x = document.querySelector(".menu-hamburger");
     if (x.style.display === "block") {
       x.style.display = "none";
     } else {
