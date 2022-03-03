@@ -1,0 +1,49 @@
+//FOOTER
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    padding-left: 5rem;
+    padding-right: 12rem;
+    border-top-right-radius: 100px;
+    background-color: hsl(240, 10%, 16%);
+    color: hsl(240, 2%, 79%);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    nav ul li {
+        margin: 1.3rem;
+        font-weight: 300;
+        a{
+            color: inherit;
+            font-style: inherit;
+            text-decoration: inherit;
+            border-bottom: 2px solid transparent;
+            &:hover {
+                border-bottom: 2px solid white;
+            }
+        }
+    }
+    nav ul li:first-child {
+        border-bottom: none;
+        margin-top: .6rem;
+        margin-bottom: 2rem;
+        font-weight: 400;
+        color: white;
+    }
+}
+@media (max-width:975px) {
+    .footer {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+@media (max-width:724px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+}
